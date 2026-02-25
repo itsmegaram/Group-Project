@@ -1,2 +1,2 @@
 hi # Group-Project
-print
+print("hi")
