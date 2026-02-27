@@ -227,3 +227,4 @@ Write an interpretative paragraph addressing things like:
 • Why an happiness score might be high/low
 • What kinds of voices or communities might use it differently
 Your goal is not to be “right,” but to show careful interpretive reasoning.
+Your goal is not to be “right,” but to show careful interpretive reasoning.

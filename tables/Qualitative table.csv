@@ -1,0 +1,21 @@
+category,word,happiness_average,happiness_standard_deviation,twitter_rank,google_rank,nyt_rank,lyrics_rank
+very positive,laugh,8.22,1.3746,1002.0,3998.0,4488.0,647.0
+very positive,laughing,8.2,1.1066,1579.0,,,1122.0
+very positive,excellent,8.18,1.1008,1496.0,1756.0,3155.0,
+very positive,laughs,8.18,1.1551,3554.0,,,2856.0
+very positive,joy,8.16,1.0568,988.0,2336.0,2723.0,809.0
+very negative,death,1.54,1.2811,509.0,307.0,373.0,433.0
+very negative,cancer,1.54,1.073,946.0,1884.0,796.0,3802.0
+very negative,died,1.56,1.198,1223.0,866.0,208.0,826.0
+very negative,kill,1.56,1.0529,798.0,2727.0,2572.0,430.0
+very negative,killed,1.56,1.2316,1137.0,1603.0,814.0,1273.0
+highly contested,slut,3.57,2.63,,,,4071.0
+highly contested,cigarettes,3.31,2.5997,,,,3279.0
+highly contested,fuck,4.14,2.5794,322.0,,,185.0
+highly contested,mortality,4.38,2.5546,,3960.0,,
+highly contested,cigarette,3.09,2.5163,,,,2678.0
+strange words,pentagon,5.02,1.6098,,,2514.0,
+strange words,sandwich,7.06,1.3763,2463.0,,,
+strange words,waving,6.11,1.4481,,,,4424.0
+strange words,ikea,5.48,1.6567,,,,
+strange words,skull,3.96,1.6325,,,,3645.0
