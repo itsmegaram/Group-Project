@@ -170,18 +170,23 @@ Code tasks
 
 The dataset includes happiness_standard_deviation. That means you can ask: which
 words did people disagree about?
+
 Code tasks
-• Plot happiness_average (x-axis) vs happiness_standard_deviation (y-axis) as a
-scatterplot.
+
+• Plot happiness_average (x-axis) vs happiness_standard_deviation (y-axis) as a scatterplot.
 • Identify the 15 words with the highest standard deviation.
-Write-up tasks (README)
-• Pick 5 of the “most disagreed-about” words and discuss why they might be
-contested:
+
+  We have identified the 15 words with the highest standard deviation: fucking, fuckin, fucked, pussy, whiskey, slut, cigarettes, fuck, mortality, cigarette, motherfuckers, churches, motherfucking, capitalism, and porn. 
+
+• Pick 5 of the “most disagreed-about” words and discuss why they might be contested:
 – ambiguity / multiple meanings
 – cultural references
 – slang and time period
 – irony, profanity, or taboo
 • Connect your qualitative interpretation to the quantitative pattern.
+
+  5 of the "most disagreed-about" words are fucking / fuckin / fucked / motherfuckers / motherfucking. 
+  The reason why these words might be contested is because of profanity, intensity, and dependency on context when it comes to the meaning. Some people might see it as negative or even offensive, while others see it in a humurous light, casual or even positive in certain informal circumstances.  
 
 2.3 Corpus comparison: what counts as “common language” depends on where you look
 
@@ -193,38 +198,21 @@ Code tasks
 • For each corpus (Twitter / Google Books / NYT / Lyrics):
 – count how many labMT words appear in its top 5000 (i.e., rank is not
 missing)
+
+  All four corpuses have 5,000 LabMT words with ranks, which represents roughly 49% share of the lexicon.
+
 • Compute a simple overlap table:
 – e.g., how many words appear in both Twitter and NYT? in all four?
+
+  There are 1816 words that appear in all four corpuses, which highlights that "common language" is dependent on the source as well. 
+
 • Make at least one plot about corpus differences (your choice):
 – bar chart of “how many words are present”
 – heatmap-like table (even simple) of overlaps
 – scatterplot of Twitter rank vs NYT rank for words present in both (optional)
 
-Write-up tasks (README)
 
 • Interpret what your plot suggests about the four corpora.
 • Give one concrete example of a word that is “common” in one corpus but missing in
 another, and interpret why that might be.
 
-3. Qualitative exploration: close reading the lexicon as a cultural artifact
-   
-This is where you bring humanities skills directly into a data project.
-
-3.1 Build a small “exhibit” of words
-
-Code tasks
-
-Create a small table (you can print it or save it) of 20 words selected across categories:
-• 5 very positive
-• 5 very negative
-• 5 highly contested (high standard deviation)
-• 5 “weird / surprising / historically dated / culturally loaded” (your choice)
-
-Write-up tasks (README)
-
-Write an interpretative paragraph addressing things like:
-• What meanings/contexts the words can have
-• Why an happiness score might be high/low
-• What kinds of voices or communities might use it differently
-Your goal is not to be “right,” but to show careful interpretive reasoning.
-Your goal is not to be “right,” but to show careful interpretive reasoning.
