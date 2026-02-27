@@ -43,7 +43,187 @@ python3 -m pip install -r requirements.txt
 python3 src/run_analysis.py
 ```
 
-### What gets generated?
-After running, look in:
-- `figures/` — PNG plots
-- `tables/` — CSV summary tables
+1. Load, clean, and describe the dataset
+
+1.1 Load the file
+
+Code tasks
+
+• Read the tab-delimited file into a pandas DataFrame.
+• Skip or handle the comment lines at the top (the dataset begins after metadata
+lines).
+• Convert numeric columns to numeric types (floats/ints).
+• Replace -- with missing values (NaN).
+• Confirm the number of rows and columns.
+
+
+• Explain how you loaded the file (1–3 sentences).
+
+  We loaded the LabMT 1.0 dataset (Data_Set_S1.txt) as a file with a delimited tab, using pandas.read_csv(). The file begins with three lines of metadata so in order to skip those rows, we used skiprows=3. We converted all the numeric columns into numeric types using pd.to_numeric() and replacing "--" values with NaN to show the missing ranks.
+
+• State the shape of the dataset (rows × columns).
+  After loading and clearing the dataset, it contains [10222] rows x [8] columns.
+
+• Give one sentence explaining what a missing rank (--) means in this dataset.
+  A missing rank (--) means that the word does not appear in the corpus's top 5000 most frequest words used in constructing the dataset, and not that the word does not appear at all in that corpus. 
+  
+1.2 Create a data dictionary
+
+Code tasks
+
+• List each column name and its data type.
+• Count missing values per column.
+
+
+• word
+  • this represents the lexical item that is evaluated for emotional valence
+  • type: string
+  • missing values per column: 0
+
+• happiness_rank
+  • this represents the rank of the word when ordered by average happiness (1 = highest happiness score)
+  • type: int64
+  • missing values per column: 0
+
+• happiness_average
+  • this represents the mean happiness score assigned to the word on a 1-9 scale
+  • type: float64
+  • missing values per column: 0
+
+• happiness_standard_deviation
+  • this represents the standard deviation of happiness ratings for the word
+  • type: float64
+  • missing values per column: 0
+
+• twitter_rank
+  • this represents the frequency rank of the word in Twitter's top 5000 most frequesnt words
+  • type: float64
+  • missing values per column: 5222
+  • missing values indicate the word does not appear in Twitter’s top-5000 list used for this dataset
+
+• google_rank
+  • this represents the frequency rank of the word in the Google Books corpus (top 5000 only)
+  • type: float64
+  • missing values per column: 5222
+  • missing values indicate the word does not appear in Google Books’ top-5000 list
+
+• nyt_rank
+  • this represents the frequency rank of the word in the New York Times corpus (top 5000 only)
+  • type: float64
+  • missing values per column: 5222
+  • missing values indicate the word does not appear in the NYT top-5000 list
+
+• lyrics_rank
+  • this represents the frequency rank of the word in a song lyriccs corpus (top 5000 only)
+  • type: float64
+  • missing values per column: 5222
+  • missing values indicate the word does not appear in the lyrics top-5000 list
+
+
+1.3 Sanity checks
+
+Code tasks
+
+• Check for duplicated words (are any words repeated?).
+• Inspect a random sample of 15 rows.
+• Identify the 10 most positive and 10 most negative words by average happiness.
+Write-up tasks (README)
+• Choose 2–3 sanity checks and explain what they tell you about data quality.
+• Briefly comment on whether the most positive/negative words “make sense” to
+you—and what “make sense” even means here.
+
+  We checked for ducplicated words and there are [0] duplicated words in the dataset.
+  
+  We inspected a random sample of 15 rows and the sample shows:
+  • happiness scores range from 3.24 to 7.96. 
+  • standard deviations range from 1.05 to 1.62. 
+  This shows that:
+  • happiness scores fall within the 1-9 scale.
+  • standard deviation values are plausible and witihin a reasonable range.
+
+  We identified the 10 most positive and 10 most negative words by sorting happiness_average.
+  The most positive words tend to reflect positive emotional or social concepts, while the most negative words are related to harm or suffering. These results "make sense" in relation to the broad cultural understanding of these concepts, rather than the objective truth. 
+
+2. Quantitative exploration: distributions and relationships
+   
+Your goal is to describe what the dataset “looks like” statistically, and to notice patterns that
+invite interpretation.
+
+2.1 Distribution of happiness scores
+
+Code tasks
+
+• Plot a histogram of happiness_average.
+• Compute summary statistics:
+– mean, median
+– standard deviation
+– 5th and 95th percentiles (or similar)
+
+• Interpret the histogram in words. Is the distribution centered? skewed? clustered?
+• Identify 1 pattern you did not expect.
+
+  The distribution in the histogram is slightly left-skewed and most words cluster around 5-6 which means the average happiness is moderately high. 
+  The distribution is centered near the median of 5.44, so most of the words are neutral or barely above it, and there is a peak around 5.5, so a large number of words have happiness values in that moderate-high range.
+  
+
+2.2 Disagreement: which words are “contested”?
+
+The dataset includes happiness_standard_deviation. That means you can ask: which
+words did people disagree about?
+Code tasks
+• Plot happiness_average (x-axis) vs happiness_standard_deviation (y-axis) as a
+scatterplot.
+• Identify the 15 words with the highest standard deviation.
+Write-up tasks (README)
+• Pick 5 of the “most disagreed-about” words and discuss why they might be
+contested:
+– ambiguity / multiple meanings
+– cultural references
+– slang and time period
+– irony, profanity, or taboo
+• Connect your qualitative interpretation to the quantitative pattern.
+
+2.3 Corpus comparison: what counts as “common language” depends on where you look
+
+The dataset includes a rank column for each corpus. This lets you study overlap and
+difference.
+
+Code tasks
+
+• For each corpus (Twitter / Google Books / NYT / Lyrics):
+– count how many labMT words appear in its top 5000 (i.e., rank is not
+missing)
+• Compute a simple overlap table:
+– e.g., how many words appear in both Twitter and NYT? in all four?
+• Make at least one plot about corpus differences (your choice):
+– bar chart of “how many words are present”
+– heatmap-like table (even simple) of overlaps
+– scatterplot of Twitter rank vs NYT rank for words present in both (optional)
+
+Write-up tasks (README)
+
+• Interpret what your plot suggests about the four corpora.
+• Give one concrete example of a word that is “common” in one corpus but missing in
+another, and interpret why that might be.
+
+3. Qualitative exploration: close reading the lexicon as a cultural artifact
+   
+This is where you bring humanities skills directly into a data project.
+
+3.1 Build a small “exhibit” of words
+
+Code tasks
+
+Create a small table (you can print it or save it) of 20 words selected across categories:
+• 5 very positive
+• 5 very negative
+• 5 highly contested (high standard deviation)
+• 5 “weird / surprising / historically dated / culturally loaded” (your choice)
+
+Write-up tasks (README)
+
+Write an interpretative paragraph addressing things like:
+• What meanings/contexts the words can have
+• Why an happiness score might be high/low
+• What kinds of voices or communities might use it differently
+Your goal is not to be “right,” but to show careful interpretive reasoning.
