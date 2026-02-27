@@ -1,49 +1,20 @@
-# Seminars 3 & 4 — Hedonometer (Project Folder)
+# Hedonometer assessment
+## Loading Dataset
+The path of the dataset was passed to the pandas dataframe, specifically the read_csv() function. It also passed the parameters:
+- Seperated the tabs in the csv
+- Skipped the first 3 rows
+- Na values got excluded from the dataset with values "--"
+- Encoded into "utf-8"
 
-This folder provides an **example project structure** (and an instructor/demo script) for the Seminars 3 & 4 group project using the **labMT 1.0** dataset (Data Set S1 from the Hedonometer paper).
+The dataset is 10222 rows x 8 columns
 
-It includes:
-- the labMT 1.0 dataset file (`data/raw/Data_Set_S1.txt`)
-- a runnable demo analysis script (`src/hedonometer_labmt_demo.py`) that produces a *typical* set of outputs aligned to the assignment
-- course documents in `docs/` (original paper + paper companion + assignment + project quickstart), provided as **.pdf**
-
-## Folder layout (course convention)
-
-- `src/` — Python scripts you run
-- `data/raw/` — input data (treat as read-only)
-- `figures/` — PNG plots (embed these in your GitHub README)
-- `tables/` — CSV tables/summaries (optional to embed, but useful for analysis)
-- `docs/` — assignment + paper companion + quickstart handout
-
-## Setup + run (from the project root)
-
-### 1) Create a virtual environment
-
-**macOS / Linux**
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python3 -m pip install --upgrade pip
-```
-
-**Windows (PowerShell)**
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-py -m pip install --upgrade pip
-```
-
-### 2) Install dependencies
-```bash
-python3 -m pip install -r requirements.txt
-```
-
-### 3) Run the demo analysis
-```bash
-python3 src/run_analysis.py
-```
-
-### What gets generated?
-After running, look in:
-- `figures/` — PNG plots
-- `tables/` — CSV summary tables
+The missing rank (--) in this dataset means that every occurance of (--) means that it holds no value.
+## 1.1 Data directionary
+## 1.2 Sanity checks
+## 2.1 Distribution of happiness scores
+## 2.2 Disagreement: which words are “contested”?
+## 2.3 Corpus comparison: what counts as “common language” depends on where you look
+## 3.1 Build a small “exhibit” of words
+## 4.1 Reconstruct the pipeline (data provenance)
+## 4.2 Consequences and limitations (your critical argument)
+## 4.3 If you were to use this dataset as an instrument today
