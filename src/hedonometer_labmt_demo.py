@@ -104,6 +104,9 @@ df = pd.read_csv(
     encoding="utf-8",
 )
 
+print(df.shape[0])
+print(df.shape[1])
+
 # Convert numeric columns to numeric dtypes.
 # (When a column has missing values, pandas often uses floats to allow NaN.)
 
@@ -386,6 +389,53 @@ exhibit = pd.concat([pos5, neg5, con5, plat5], ignore_index=True)[exhibit_cols]
 print(exhibit.to_string(index=False))
 save_csv(exhibit, "word_exhibit_demo_20_words.csv", index=False)
 
+# 5 very positive, skipping the first 5.
+pos6 = df.sort_values("happiness_average", ascending=False).iloc[5:10].copy()
+pos6["category"] = "very positive"
+
+# 5 very negative, skipping the last 5.
+neg6 = df.sort_values("happiness_average", ascending=True).iloc[5:10].copy()
+neg6["category"] = "very negative"
+
+# 5 highly contested (high standard deviation), skipping the first 10.
+con6 = df.sort_values("happiness_standard_deviation", ascending=False).iloc[5:10].copy()
+con6["category"] = "highly contested"
+
+# 5 strange words
+
+wei6 = df.iloc[[7114]].copy()
+wei6["category"] = "strange words"
+
+wei7 = df.iloc[[538]].copy()
+wei7["category"] = "strange words"
+
+wei8 = df.iloc[[2281]].copy()
+wei8["category"] = "strange words"
+
+wei9 = df.iloc[[4903]].copy()
+wei9["category"] = "strange words"
+
+wei10 = df.iloc[[9211]].copy()
+wei10["category"] = "strange words"
+
+
+
+
+exhibit_cols = [
+    "category",
+    "word",
+    "happiness_average",
+    "happiness_standard_deviation",
+    "twitter_rank",
+    "google_rank",
+    "nyt_rank",
+    "lyrics_rank",
+]
+
+exhibit = pd.concat([pos6, neg6, con6, wei6, wei7, wei8, wei9, wei10], ignore_index=True)[exhibit_cols]
+
+print(exhibit.to_string(index=False))
+save_csv(exhibit, "Qualitative table.csv", index=False)
 
 # -----------------------------------------------------------------------------
 # Done
