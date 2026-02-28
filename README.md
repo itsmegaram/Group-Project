@@ -1,6 +1,6 @@
-# Seminars 3 & 4 — Hedonometer (Project Folder)
+# Happiness According to Mechanical Turks: Quantitative + Qualitative Exploration of the Hedonometer (labMT1.0) Dataset
 
-This folder provides an **example project structure** (and an instructor/demo script) for the Seminars 3 & 4 group project using the **labMT 1.0** dataset (Data Set S1 from the Hedonometer paper).
+This project provides an **example project structure** (and an instructor/demo script) for the Seminars 3 & 4 group project using the **labMT 1.0** dataset (Data Set S1 from the Hedonometer paper). 
 
 It includes:
 - the labMT 1.0 dataset file (`data/raw/Data_Set_S1.txt`)
