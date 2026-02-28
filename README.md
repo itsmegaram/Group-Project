@@ -256,6 +256,33 @@ Sanity check:
 
 #4.0 Critical reflection: how was this dataset generated, and why does it matter?
 ## 4.1 Reconstructing the pipeline
+How our dataset emerged.
+1. From a LabMT lexicon words were selected.
+2. These selected words were rated on a happiness scale.
+3. We calculated the score of happiness for each word.
+4. After scoring the happiness scale, disagreement was measured by standard deviation.
+5. Word frequency rankins are collected from various platforms, Twitter, Google Books, NYT and Lyrics.
+6. These datasets were merged into one table linking, which includes
+   - word
+   - happiness_average
+   - happiness_standard_deviation
+   - corpus rank columns
+7. Words that did not appear on tge corpus, received a "missing" value.
+8. The final gathered dataset was turned into a CSV file for analysis. 
 ## 4.2 Consequenses and limitations
+
+1. Choice: English-only lexicon, only English words were included.
+  Consequense: Thi can have an impact on linguistic bias, and not be as globally representative. 
+Example: Twitter slang terms differ from formal writing in NYT.
+
+2. Choice: Specific corpora was selected (Twitter, NYT, Lyrics, GOOGLE Books)
+  Consequense: This dataset compares specific genres and platforms.
+This showcases a different social group. This explains why some words appear in one corpus but not in the other one. 
+Example: Twitter contains slang, Google Books does not, different words appear.
+
+4. Choice: Words are being used without clear context
+  Consequense: Meaning can change depending on context, exemplifying how the happiness score might not reflect real usage.
+Example: "Fucking" had a high standard deviation. This word can be used in various contexts and ways, humorous, offemsive or positive. Therefore it needs to be critically seen.
+
 ### 4.3 Using this dataset today
 
