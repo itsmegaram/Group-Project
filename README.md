@@ -295,13 +295,13 @@ Example: "Fucking" had a high standard deviation. This word can be used in vario
 To be able to use this dataset as a measurement instrument, it would be used to given a direction, not as a precise emotional detector. To get a more comprehensive understanding and analysis, it would need a more nuanced interpretation. This dataset works well for a large-scale analysis. 
 
 We would use this dataset for:
-  1. Comparing emotional tone across genres and platforms
-  2. To help identify contested vocabulary
+  1. Comparing emotional tone across genres and platforms: By analyzing a few different corpora (Twitter, Google Books, NYT) we can identify and point out on shifts across multiple forms of media. 
+  2. To help identify contested vocabulary: Our dataset reveals which words tend to be controversial to the feeling linked to them. 
 
 This dataset is not recommended for:
-  1. Making claims about individuals intent with words
-  2. Measuring complex emotions, such as sarcasm and irony
-  3. Analyzing multilangual populations
+  1. Making claims about individuals intent with words: this dataset lacks to showcase the complexity and usage of words in various contexts. 
+  2. Measuring complex emotions, such as sarcasm and irony: the scope of the dataset is limited, which hides certain feelings, that would require deeper emotional analysis.
+  3. Analyzing multilangual populations: the dataset does not go beyond the English language, whish leaves out emotional expression in other cultural contexts. 
      
 To improve this dataset we would include contextual embeddings and leave isolated words out of the analysis and expand beyond English language. This dataset would be ideal for macrolevel trends, where interpretation is slightly more limited. 
 
