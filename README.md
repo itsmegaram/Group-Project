@@ -269,6 +269,7 @@ How our dataset emerged.
    - corpus rank columns
 7. Words that did not appear on the corpus, received a "missing" value.
 8. The final gathered dataset was turned into a CSV file for analysis. 
+
 ## 4.2 Consequences and limitations
 
 1. Choice: English-only lexicon, only English words were included.
@@ -280,11 +281,29 @@ Example: Twitter slang terms differ from formal writing in NYT.
 This showcases a different social group. This explains why some words appear in one corpus but not in the other one. 
 Example: Twitter contains slang, Google Books does not, different words appear.
 
+3. Choice: Survey-based happiness ratings
+   Consequence: The received happiness score come from human rates  using a scale from 1-9. These ratings revel beyond universal truths, because time, cultural norms and raters as individuals are not taken into account. 
+   
 4. Choice: Words are being used without clear context
   Consequence: Meaning can change depending on context, exemplifying how the happiness score might not reflect real usage.
 Example: "Fucking" had a high standard deviation. This word can be used in various contexts and ways, humorous, offensive or positive. Therefore it needs to be critically seen.
 
-### 4.3 Using this dataset today
-Instrument note
+5. Choice: using only Top-5000 frequency constraint per corpus
+   Consequence: By including only 5000 most frequent words in each corpus, the rare and emerging words may be left out. Therefore, the "missing value" is misleading, since it does have a value if given context outside of the top 5000 list. 
+
+# 4.3 If you were to use this dataset as an instrument today...
+To be able to use this dataset as a measurement instrument, it would be used to given a direction, not as a precise emotional detector. To get a more comprehensive understanding and analysis, it would need a more nuanced interpretation. This dataset works well for a large-scale analysis. 
+
+We would use this dataset for:
+  1. Comparing emotional tone across genres and platforms
+  2. To help identify contested vocabulary
+
+This dataset is not recommended for:
+  1. Making claims about individuals intent with words
+  2. Measuring complex emotions, such as sarcasm and irony
+  3. Analyzing multilangual populations
+     
+To improve this dataset we would include contextual embeddings and leave isolated words out of the analysis and expand beyond English language. This dataset would be ideal for macrolevel trends, where interpretation is slightly more limited. 
+
 
 
