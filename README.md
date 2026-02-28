@@ -253,3 +253,9 @@ All happiness-related columns and `word` have 0 missing values.
 
 Sanity check:
 - Duplicate words: 0
+
+#4.0 Critical reflection: how was this dataset generated, and why does it matter?
+## 4.1 Reconstructing the pipeline
+## 4.2 Consequenses and limitations
+### 4.3 Using this dataset today
+
