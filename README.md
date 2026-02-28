@@ -80,7 +80,7 @@ Code tasks
 | happiness_rank | Rank when ordered by average happiness (1 = highest) | int64 | 0 |
 | happiness_average | this represents the mean happiness score assigned to the word on a 1-9 scale | float64 | 0 |
 | happiness_standard_deviation | this represents the standard deviation of happiness ratings for the word | float64 | 0 |
-| twitter_rank | this represents the frequency rank of the word in Twitter's top 5000 most frequent words | float 64 | 5222 (missing values indicate the word does not appear in Twitter's top-5000 list used for this dataset) | 
+| twitter_rank | this represents the frequency rank of the word in Twitter's top 5000 most frequent words | float64 | 5222 (missing values indicate the word does not appear in Twitter's top-5000 list used for this dataset) | 
 | google_rank | this represents the frequency rank of the word in the Google Books corpus (top 5000 only) | float64 | 5222 (missing values indicate the word does not appear in Google Books' top-5000 list) |
 | nyt_rank | this represents the frequency rank of the word in the New York Times corpus (top 5000 only) | float64 | 5222 (missing values indicate the word does not appear in the NYT top-5000 list) |
 | lyrics_rank | this represents the frequency rank of the word in a song lyrics corpus (top 5000 only) | float64 | 5222 (missing values indicate the word does not appear in the lyrics top-5000 list) |
