@@ -106,7 +106,7 @@ you—and what “make sense” even means here.
   • standard deviations range from 1.05 to 1.62. 
   This shows that:
   • happiness scores fall within the 1-9 scale.
-  • standard deviation values are plausible and witihin a reasonable range.
+  • standard deviation values are plausible and within a reasonable range.
 
   We identified the 10 most positive and 10 most negative words by sorting happiness_average.
   The most positive words tend to reflect positive emotional or social concepts, while the most negative words are related to harm or suffering. These results "make sense" in relation to the broad cultural understanding of these concepts, rather than the objective truth. 
