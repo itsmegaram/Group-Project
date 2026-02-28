@@ -102,11 +102,13 @@ you—and what “make sense” even means here.
   We checked for ducplicated words and there are [0] duplicated words in the dataset.
   
   We inspected a random sample of 15 rows and the sample shows:
-  • happiness scores range from 3.24 to 7.96. 
-  • standard deviations range from 1.05 to 1.62. 
-  This shows that:
-  • happiness scores fall within the 1-9 scale.
-  • standard deviation values are plausible and within a reasonable range.
+
+  | Sample | Range | Interpretation |
+  |--------|-------|----------------|
+  | Happiness scores | 3.24 - 7.96 | fall within 1-9 scale |
+  | Standard deviations | 1.05 - 1.62 | plausible and within a reasonable range | 
+
+  This shows the data falls within expected ranges 
 
   We identified the 10 most positive and 10 most negative words by sorting happiness_average.
   The most positive words tend to reflect positive emotional or social concepts, while the most negative words are related to harm or suffering. These results "make sense" in relation to the broad cultural understanding of these concepts, rather than the objective truth. 
