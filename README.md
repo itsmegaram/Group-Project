@@ -47,7 +47,7 @@ python3 src/run_analysis.py
 
 **_1.1 Load the file_**
 
-Code tasks
+• _Code tasks_
 
 - Read the tab-delimited file into a pandas DataFrame.
 - Skip or handle the comment lines at the top (the dataset begins after metadata
