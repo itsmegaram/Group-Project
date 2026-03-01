@@ -67,7 +67,7 @@ lines).
 
 • _Give one sentence explaining what a missing rank (--) means in this dataset._  
 
-  A missing rank (--) means that the word does **not** appear in the corpus's top 5000 most frequest words used in constructing the dataset, and not that the word does not appear at all in that corpus. 
+  A missing rank (--) means that the word does **not** appear in the corpus's top 5000 most frequent words used in constructing the dataset, and not that the word does not appear at all in that corpus. 
 
   
 **_1.2 Create a data dictionary_**
@@ -102,7 +102,7 @@ Write-up tasks (README)
 • Briefly comment on whether the most positive/negative words “make sense” to
 you—and what “make sense” even means here.
 
-  We checked for ducplicated words and there are [0] duplicated words in the dataset.
+  We checked for duplicated words and there are [0] duplicated words in the dataset.
   
   We inspected a random sample of 15 rows and the sample shows:
 
@@ -242,7 +242,7 @@ How our dataset emerged.
 2. These selected words were rated on a happiness scale.
 3. We calculated the score of happiness for each word.
 4. After scoring the happiness scale, disagreement was measured by standard deviation.
-5. Word frequency rankins are collected from various platforms, Twitter, Google Books, NYT and Lyrics.
+5. Word frequency rankings are collected from various platforms, Twitter, Google Books, NYT and Lyrics.
 6. These datasets were merged into one table linking, which includes
    - word
    - happiness_average
@@ -268,7 +268,7 @@ This showcases a different social group. This explains why some words appear in 
 
 3. *Choice*: Survey-based happiness ratings
    
-   *Consequence*: The received happiness score come from human rates  using a scale from 1-9. These ratings revel beyond universal truths, because time, cultural norms and raters as individuals are not taken into account.
+   *Consequence*: The received happiness score come from human rates  using a scale from 1-9. These ratings reveal beyond universal truths, because time, cultural norms and raters as individuals are not taken into account.
 
    *Example*: 
    
@@ -294,7 +294,7 @@ To be able to use this dataset as a measurement instrument, it would be used to 
 **This dataset is not recommended for**:
   1. Making claims about individuals' intent with words: this dataset lacks to showcase the complexity and usage of words in various contexts. 
   2. Measuring complex emotions, such as sarcasm and irony: the scope of the dataset is limited, which hides certain feelings, that would require deeper emotional analysis.
-  3. Analyzing multilangual populations: the dataset does not go beyond the English language, whish leaves out emotional expression in other cultural contexts. 
+  3. Analyzing multilingual populations: the dataset does not go beyond the English language, which leaves out emotional expression in other cultural contexts. 
      
 To improve this dataset we would include contextual embeddings and leave isolated words out of the analysis and expand beyond English language. This dataset would be ideal for macrolevel trends, where interpretation is slightly more limited. 
 
