@@ -158,8 +158,8 @@ Code tasks
 – irony, profanity, or taboo
 • Connect your qualitative interpretation to the quantitative pattern.
 
-  5 of the "most disagreed-about" words are fucking / fuckin / fucked / motherfuckers / motherfucking. 
-  The reason why these words might be contested is because of profanity, intensity, and dependency on context when it comes to the meaning. Some people might see it as negative or even offensive, while others see it in a humurous light, casual or even positive in certain informal circumstances.  
+  5 of the "most disagreed-about" words are **fucking** / **fuckin** / **fucked** / **motherfuckers** / **motherfucking**. 
+  The reason why these words might be contested is because of profanity, intensity, and dependency on context when it comes to the meaning. Some people might see it as negative or even offensive, while others see it in a humorous light, casual or even positive in certain informal circumstances.  
 
 2.3 Corpus comparison: what counts as “common language” depends on where you look
 
