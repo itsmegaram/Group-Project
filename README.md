@@ -68,6 +68,7 @@ lines).
 • _Give one sentence explaining what a missing rank (--) means in this dataset._  
 
   A missing rank (--) means that the word does **not** appear in the corpus's top 5000 most frequest words used in constructing the dataset, and not that the word does not appear at all in that corpus. 
+
   
 **_1.2 Create a data dictionary_**
 
