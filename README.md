@@ -221,15 +221,19 @@ Parsing notes:
 - `twitter_rank`, `google_rank`, `nyt_rank`, `lyrics_rank`: float64 (nullable due to missing values)
 
 ### Missingness overview
-Missing values per column:
-- `twitter_rank`: 5222 missing
-- `google_rank`: 5222 missing
-- `nyt_rank`: 5222 missing
-- `lyrics_rank`: 5222 missing
+Missing values per column:  
+
+  | Column | Missing Values |
+  |--------|----------------|
+  | `twitter_rank` | 5,222 |
+  | `google_rank` | 5,222 |
+  | `nyt_rank` | 5,222 |
+  | `lyrics_rank` | 5,222 |
+  
 All happiness-related columns and `word` have 0 missing values.
 
 Sanity check:
-- Duplicate words: 0
+- Duplicate words: **0**
 
 ## 4.0 Critical reflection: how was this dataset generated, and why does it matter?
 ## 4.1 Reconstructing the pipeline
