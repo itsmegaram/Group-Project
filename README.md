@@ -45,29 +45,31 @@ python3 src/run_analysis.py
 
 **_1. Load, clean, and describe the dataset_**
 
-**1.1 Load the file**
+**_1.1 Load the file_**
 
 Code tasks
 
-• Read the tab-delimited file into a pandas DataFrame.
-• Skip or handle the comment lines at the top (the dataset begins after metadata
+- Read the tab-delimited file into a pandas DataFrame.
+- Skip or handle the comment lines at the top (the dataset begins after metadata
 lines).
-• Convert numeric columns to numeric types (floats/ints).
-• Replace -- with missing values (NaN).
-• Confirm the number of rows and columns.
+- Convert numeric columns to numeric types (floats/ints).
+- Replace -- with missing values (NaN).
+- Confirm the number of rows and columns.
 
 
-• Explain how you loaded the file (1–3 sentences).
+• _Explain how you loaded the file (1–3 sentences)._
 
-  We loaded the LabMT 1.0 dataset (Data_Set_S1.txt) as a file with a delimited tab, using pandas.read_csv(). The file begins with three lines of metadata so in order to skip those rows, we used skiprows=3. We converted all the numeric columns into numeric types using pd.to_numeric() and replacing "--" values with NaN to show the missing ranks.
+  We loaded the LabMT 1.0 dataset (Data_Set_S1.txt) as a file with a delimited tab, using 'pandas.read_csv()'. The file begins with three lines of metadata so in order to skip those rows, we used 'skiprows=3'. We converted all the numeric columns into numeric types using 'pd.to_numeric()' and replacing "--" values with 'NaN' to show the missing ranks.
 
-• State the shape of the dataset (rows × columns).
-  After loading and clearing the dataset, it contains [10222] rows x [8] columns.
+• _State the shape of the dataset (rows × columns)._  
 
-• Give one sentence explaining what a missing rank (--) means in this dataset.
-  A missing rank (--) means that the word does not appear in the corpus's top 5000 most frequest words used in constructing the dataset, and not that the word does not appear at all in that corpus. 
+  After loading and clearing the dataset, it contains **[10222] rows x [8] columns**.
+
+• _Give one sentence explaining what a missing rank (--) means in this dataset._  
+
+  A missing rank (--) means that the word does **not** appear in the corpus's top 5000 most frequest words used in constructing the dataset, and not that the word does not appear at all in that corpus. 
   
-**1.2 Create a data dictionary**
+**_1.2 Create a data dictionary_**
 
 Code tasks
 
@@ -87,7 +89,7 @@ Code tasks
 
 
 
-**1.3 Sanity checks**
+**_1.3 Sanity checks_**
 
 Code tasks
 
@@ -118,7 +120,7 @@ you—and what “make sense” even means here.
 Your goal is to describe what the dataset “looks like” statistically, and to notice patterns that
 invite interpretation.
 
-**2.1 Distribution of happiness scores**
+**_2.1 Distribution of happiness scores_**
 
 Code tasks
 
@@ -135,7 +137,7 @@ Code tasks
   The distribution is centered near the median of 5.44, so most of the words are neutral or barely above it, and there is a peak around 5.5, so a large number of words have happiness values in that moderate-high range.
   
 
-**2.2 Disagreement: which words are “contested”?**
+**_2.2 Disagreement: which words are “contested”?_**
 
 The dataset includes happiness_standard_deviation. That means you can ask: which
 words did people disagree about?
@@ -161,7 +163,7 @@ Code tasks
   5 of the "most disagreed-about" words are **fucking** / **fuckin** / **fucked** / **motherfuckers** / **motherfucking**. 
   The reason why these words might be contested is because of profanity, intensity, and dependency on context when it comes to the meaning. Some people might see it as negative or even offensive, while others see it in a humorous light, casual or even positive in certain informal circumstances.  
 
-**2.3 Corpus comparison: what counts as “common language” depends on where you look**
+**_2.3 Corpus comparison: what counts as “common language” depends on where you look_**
 
 The dataset includes a rank column for each corpus. This lets you study overlap and
 difference.
