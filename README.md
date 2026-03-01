@@ -172,14 +172,14 @@ difference.
 
 Code tasks
 
-• For each corpus (Twitter / Google Books / NYT / Lyrics):
+• _For each corpus (Twitter / Google Books / NYT / Lyrics):
 – count how many labMT words appear in its top 5000 (i.e., rank is not
-missing)
+missing)_
 
   All four corpuses have 5,000 LabMT words with ranks, which represents roughly 49% share of the lexicon.
 
-• Compute a simple overlap table:
-– e.g., how many words appear in both Twitter and NYT? in all four?
+• _Compute a simple overlap table:
+– e.g., how many words appear in both Twitter and NYT? in all four?_
 
   There are 1816 words that appear in all four corpuses, which highlights that "common language" is dependent on the source as well. 
 
