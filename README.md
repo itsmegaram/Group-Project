@@ -285,7 +285,7 @@ This showcases a different social group. This explains why some words appear in 
    *Example*: 
 
 # 4.3 If you were to use this dataset as an instrument today...
-To be able to use this dataset as a measurement instrument, it would be used to given a direction, not as a precise emotional detector. To get a more comprehensive understanding and analysis, it would need a more nuanced interpretation. This dataset works well for a large-scale analysis. 
+To be able to use this dataset as a measurement instrument, it would be used to give a direction, not as a precise emotional detector. To get a more comprehensive understanding and analysis, it would need a more nuanced interpretation. This dataset works well for a large-scale analysis. 
 
 **We would use this dataset for**:
   1. Comparing emotional tone across genres and platforms: By analyzing a few different corpora (Twitter, Google Books, NYT) we can identify and point out on shifts across multiple forms of media. 
