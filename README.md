@@ -145,7 +145,11 @@ Code tasks
 • Plot happiness_average (x-axis) vs happiness_standard_deviation (y-axis) as a scatterplot.
 • Identify the 15 words with the highest standard deviation.
 
-  We have identified the 15 words with the highest standard deviation: fucking, fuckin, fucked, pussy, whiskey, slut, cigarettes, fuck, mortality, cigarette, motherfuckers, churches, motherfucking, capitalism, and porn. 
+  We have identified the 15 words with the highest standard deviation:    
+  
+    fucking, fuckin, fucked, pussy, whiskey  
+    slut, cigarettes, fuck, mortality, cigarette 
+    motherfuckers, churches, motherfucking, capitalism, porn. 
 
 • Pick 5 of the “most disagreed-about” words and discuss why they might be contested:
 – ambiguity / multiple meanings
