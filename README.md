@@ -296,7 +296,7 @@ To be able to use this dataset as a measurement instrument, it would be used to 
   2. Measuring complex emotions, such as sarcasm and irony: the scope of the dataset is limited, which hides certain feelings, that would require deeper emotional analysis.
   3. Analyzing multilingual populations: the dataset does not go beyond the English language, which leaves out emotional expression in other cultural contexts. 
      
-To improve this dataset we would include contextual embeddings and leave isolated words out of the analysis and expand beyond English language. This dataset would be ideal for macrolevel trends, where interpretation is slightly more limited. 
+To improve this dataset we would include contextual embeddings and leave isolated words out of the analysis and expand beyond English language. This dataset would be ideal for macro-level trends, where interpretation is slightly more limited. 
 
 
 
