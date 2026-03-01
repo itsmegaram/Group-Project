@@ -254,22 +254,32 @@ How our dataset emerged.
 ## 4.2 Consequences and limitations
 
 1. Choice: English-only lexicon, only English words were included.
-  Consequence: This can have an impact on linguistic bias, and not be as globally representative. 
-Example: Twitter slang terms differ from formal writing in NYT.
+   
+    Consequence: This can have an impact on linguistic bias, and not be as globally representative.   
+  
+     Example: Twitter slang terms differ from formal writing in NYT.
 
 2. Choice: Specific corpora was selected (Twitter, NYT, Lyrics, GOOGLE Books)
-  Consequence: This dataset compares specific genres and platforms.
-This showcases a different social group. This explains why some words appear in one corpus but not in the other one. 
-Example: Twitter contains slang, Google Books does not, different words appear.
+   
+    Consequence: This dataset compares specific genres and platforms.
+This showcases a different social group. This explains why some words appear in one corpus but not in the other one.   
+
+    Example: Twitter contains slang, Google Books does not, different words appear.
 
 3. Choice: Survey-based happiness ratings
-   Consequence: The received happiness score come from human rates  using a scale from 1-9. These ratings revel beyond universal truths, because time, cultural norms and raters as individuals are not taken into account. 
+   
+   Consequence: The received happiness score come from human rates  using a scale from 1-9. These ratings revel beyond universal truths, because time, cultural norms and raters as individuals are not taken into account.
+
+   Example: 
    
 4. Choice: Words are being used without clear context
-  Consequence: Meaning can change depending on context, exemplifying how the happiness score might not reflect real usage.
-Example: "Fucking" had a high standard deviation. This word can be used in various contexts and ways, humorous, offensive or positive. Therefore it needs to be critically seen.
+
+    Consequence: Meaning can change depending on context, exemplifying how the happiness score might not reflect real usage.  
+  
+    Example: "Fucking" had a high standard deviation. This word can be used in various contexts and ways, humorous, offensive or positive. Therefore it needs to be critically seen.
 
 5. Choice: using only Top-5000 frequency constraint per corpus
+   
    Consequence: By including only 5000 most frequent words in each corpus, the rare and emerging words may be left out. Therefore, the "missing value" is misleading, since it does have a value if given context outside of the top 5000 list. 
 
 # 4.3 If you were to use this dataset as an instrument today...
