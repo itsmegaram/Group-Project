@@ -43,9 +43,9 @@ python3 -m pip install -r requirements.txt
 python3 src/run_analysis.py
 ```
 
-1. Load, clean, and describe the dataset
+**_1. Load, clean, and describe the dataset_**
 
-1.1 Load the file
+**1.1 Load the file**
 
 Code tasks
 
@@ -67,7 +67,7 @@ lines).
 • Give one sentence explaining what a missing rank (--) means in this dataset.
   A missing rank (--) means that the word does not appear in the corpus's top 5000 most frequest words used in constructing the dataset, and not that the word does not appear at all in that corpus. 
   
-1.2 Create a data dictionary
+**1.2 Create a data dictionary**
 
 Code tasks
 
@@ -87,7 +87,7 @@ Code tasks
 
 
 
-1.3 Sanity checks
+**1.3 Sanity checks**
 
 Code tasks
 
@@ -113,12 +113,12 @@ you—and what “make sense” even means here.
   We identified the 10 most positive and 10 most negative words by sorting happiness_average.
   The most positive words tend to reflect positive emotional or social concepts, while the most negative words are related to harm or suffering. These results "make sense" in relation to the broad cultural understanding of these concepts, rather than the objective truth. 
 
-2. Quantitative exploration: distributions and relationships
+**_2. Quantitative exploration: distributions and relationships_**
    
 Your goal is to describe what the dataset “looks like” statistically, and to notice patterns that
 invite interpretation.
 
-2.1 Distribution of happiness scores
+**2.1 Distribution of happiness scores**
 
 Code tasks
 
@@ -135,7 +135,7 @@ Code tasks
   The distribution is centered near the median of 5.44, so most of the words are neutral or barely above it, and there is a peak around 5.5, so a large number of words have happiness values in that moderate-high range.
   
 
-2.2 Disagreement: which words are “contested”?
+**2.2 Disagreement: which words are “contested”?**
 
 The dataset includes happiness_standard_deviation. That means you can ask: which
 words did people disagree about?
@@ -161,7 +161,7 @@ Code tasks
   5 of the "most disagreed-about" words are **fucking** / **fuckin** / **fucked** / **motherfuckers** / **motherfucking**. 
   The reason why these words might be contested is because of profanity, intensity, and dependency on context when it comes to the meaning. Some people might see it as negative or even offensive, while others see it in a humorous light, casual or even positive in certain informal circumstances.  
 
-2.3 Corpus comparison: what counts as “common language” depends on where you look
+**2.3 Corpus comparison: what counts as “common language” depends on where you look**
 
 The dataset includes a rank column for each corpus. This lets you study overlap and
 difference.
