@@ -237,10 +237,11 @@ All happiness-related columns and `word` have 0 missing values.
 Sanity check:
 - Duplicate words: **0**
 
-3. Qualitative exploration: close reading the lexicon as a cultural artifact
+**_3. Qualitative exploration: close reading the lexicon as a cultural artifact._**
 This is where you bring humanities skills directly into a data project.
+
 3.1 Build a small “exhibit” of words
-Code tasks
+  Code tasks
 Create a small table (you can print it or save it) of 20 words selected across categories:
 • 5 very positive
 • 5 very negative
