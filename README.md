@@ -193,6 +193,8 @@ missing)_
 • Give one concrete example of a word that is “common” in one corpus but missing in
 another, and interpret why that might be.
 
+  Each corpus contains exactly 5000 ranked words by construction.
+  A good example is the word “lol”. It is ranked high on Twitter but does not appear in the NYT top-5000. This reflects the informal, conversational style of social media. 
 
 # Group-Project# 
 ## Dataset: LabMT 1.0 (word happiness lexicon)
