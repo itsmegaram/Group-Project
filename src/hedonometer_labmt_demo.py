@@ -258,13 +258,27 @@ rank_cols = ["twitter_rank", "google_rank", "nyt_rank", "lyrics_rank"]
 coverage_rows = []
 for col in rank_cols:
     n_present = int(df[col].notna().sum())
-    coverage_rows.append(
-        {
-            "rank_column": col,
-            "n_words_with_rank": n_present,
-            "share_of_lexicon": n_present / len(df),
-        }
-    )
+    pretty_names = {
+    "twitter_rank": "Twitter",
+    "google_rank": "Google Books",
+    "nyt_rank": "NYT",
+    "lyrics_rank": "Lyrics"
+}
+
+coverage_rows.append(
+    {
+        "corpus": pretty_names[col],
+        "n_words_with_rank": n_present,
+        "share_of_lexicon": n_present / len(df),
+    }
+) 
+pretty_names = {
+    "twitter_rank": "Twitter",
+    "google_rank": "Google Books",
+    "nyt_rank": "NYT",
+    "lyrics_rank": "Lyrics"
+}
+
 
 coverage = pd.DataFrame(coverage_rows)
 print(coverage.to_string(index=False))
@@ -272,11 +286,10 @@ save_csv(coverage, "corpus_rank_coverage.csv", index=False)
 
 # Bar chart (coverage)
 plt.figure()
-plt.bar(coverage["rank_column"], coverage["n_words_with_rank"])
-plt.title("How many labMT words appear in each corpus top-5000?")
-plt.xlabel("corpus rank column")
-plt.ylabel("number of words with a rank")
-plt.xticks(rotation=20, ha="right")
+plt.bar(coverage["corpus"], coverage["n_words_with_rank"])
+plt.title("Number of LabMT Words in Each Corpus Top-5000")
+plt.xlabel("Corpus")
+plt.ylabel("Number of Words")
 plt.tight_layout()
 save_figure("corpus_rank_coverage_bar.png")
 plt.close()
@@ -311,6 +324,21 @@ for i in range(len(labels)):
 pairwise_overlap = pd.DataFrame(pairs).sort_values("pair")
 save_csv(pairwise_overlap, "pairwise_overlap_counts.csv", index=False)
 
+# Scatterplot: Twitter rank vs NYT rank (only words present in both)
+
+both = df[(df["twitter_rank"].notna()) & (df["nyt_rank"].notna())]
+
+plt.figure()
+plt.scatter(both["twitter_rank"], both["nyt_rank"], alpha=0.3)
+
+plt.xlabel("Twitter rank")
+plt.ylabel("NYT rank")
+plt.title("Twitter Rank vs NYT Rank (Words in Both Corpora)")
+
+plt.tight_layout()
+save_figure("twitter_vs_nyt_rank_scatter.png")
+plt.close()
+
 # (C) One concrete example: frequent in one corpus, missing in another.
 # Here we look for words that are relatively frequent on Twitter but do NOT appear in NYT's top-5000.
 
@@ -323,20 +351,6 @@ twitter_common_nyt_missing = (
 print("\nExample words frequent on Twitter but missing in NYT top-5000 (top 20 by twitter_rank):")
 print(twitter_common_nyt_missing.to_string(index=False))
 save_csv(twitter_common_nyt_missing, "twitter_common_nyt_missing_top20.csv", index=False)
-
-# Optional: compare ranks directly for words present in BOTH corpora.
-# (This can hint at how similar/different the corpora are.)
-
-both_twitter_nyt = df.dropna(subset=["twitter_rank", "nyt_rank"])
-
-plt.figure()
-plt.scatter(both_twitter_nyt["twitter_rank"], both_twitter_nyt["nyt_rank"], s=10, alpha=0.35)
-plt.title("Twitter rank vs NYT rank (words present in both)")
-plt.xlabel("twitter_rank (1 = most frequent)")
-plt.ylabel("nyt_rank (1 = most frequent)")
-plt.tight_layout()
-save_figure("twitter_rank_vs_nyt_rank_scatter.png")
-plt.close()
 
 
 # -----------------------------------------------------------------------------
