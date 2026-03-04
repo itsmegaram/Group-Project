@@ -161,7 +161,9 @@ Code tasks
 • Identify the 15 words with the highest standard deviation.
 
 <img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/514f58db-41f7-4d6c-9589-a83deeb7ccca" />
-
+<p align="center">
+    <sub><em>Figure 2.2: Scatterplot of happiness_average and happiness_standard_deviation</em></sub>
+</p>
 
   We have identified the 15 words with the highest standard deviation:    
   
