@@ -141,8 +141,7 @@ Code tasks
 
 <img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/cbb565c4-6824-433e-8961-df60d5479410" />
 <p align="center">
-  <span style="font-size:10px; font-style:italic;">
-    Figure 2.1: Distribution of happiness_average score</span>
+  <sub><em>Figure 2.1: Distribution of happiness average scores</em></sub>
   </p>
 
 
