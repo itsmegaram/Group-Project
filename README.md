@@ -273,7 +273,7 @@ This dataset shows on the surface that words can show happiness, however the con
 
 
 ## 4.0 Critical reflection: how was this dataset generated, and why does it matter?
-## 4.1 Reconstructing the pipeline
+### 4.1 Reconstructing the pipeline
 How our dataset emerged.
 1. From a LabMT lexicon words were selected.
 2. These selected words were rated on a happiness scale.
@@ -288,7 +288,7 @@ How our dataset emerged.
 7. Words that did not appear on the corpus, received a "missing" value.
 8. The final gathered dataset was turned into a CSV file for analysis. 
 
-## 4.2 Consequences and limitations
+### 4.2 Consequences and limitations
 
 1. *Choice*: English-only lexicon, only English words were included.
    
@@ -321,7 +321,7 @@ This showcases a different social group. This explains why some words appear in 
 
    *Example*: 
 
-# 4.3 If you were to use this dataset as an instrument today...
+### 4.3 If you were to use this dataset as an instrument today...
 To be able to use this dataset as a measurement instrument, it would be used to give a direction, not as a precise emotional detector. To get a more comprehensive understanding and analysis, it would need a more nuanced interpretation. This dataset works well for a large-scale analysis. 
 
 **We would use this dataset for**:
