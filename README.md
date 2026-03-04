@@ -157,6 +157,9 @@ Code tasks
 • Plot happiness_average (x-axis) vs happiness_standard_deviation (y-axis) as a scatterplot.
 • Identify the 15 words with the highest standard deviation.
 
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/514f58db-41f7-4d6c-9589-a83deeb7ccca" />
+
+
   We have identified the 15 words with the highest standard deviation:    
   
     fucking, fuckin, fucked, pussy, whiskey  
@@ -184,6 +187,9 @@ Code tasks
 – count how many labMT words appear in its top 5000 (i.e., rank is not
 missing)_
 
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/6c9ee89e-12d6-4e5e-b916-6168762f33b2" />
+
+
   All four corpuses have 5,000 LabMT words with ranks, which represents roughly 49% share of the lexicon.
 
 • _Compute a simple overlap table:
@@ -196,6 +202,7 @@ missing)_
 – heatmap-like table (even simple) of overlaps
 – scatterplot of Twitter rank vs NYT rank for words present in both (optional)
 
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/fd7efa7c-0b7b-42a6-a4a3-716832a3b7e4" />
 
 • Interpret what your plot suggests about the four corpora.
 • Give one concrete example of a word that is “common” in one corpus but missing in
