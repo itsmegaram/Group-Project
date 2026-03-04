@@ -141,7 +141,6 @@ Code tasks
 
 <img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/cbb565c4-6824-433e-8961-df60d5479410" />
 
-
   The distribution in the histogram is **slightly left-skewed** and most words cluster around 5-6 which means the average happiness is moderately high.  
   
   The distribution is centered near the median of 5.44, so most of the words are neutral or barely above it, and there is a peak around 5.5, so a large number of words have happiness values in that moderate-high range.
