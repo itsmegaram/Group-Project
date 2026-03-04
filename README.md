@@ -140,6 +140,10 @@ Code tasks
 • Identify 1 pattern you did not expect.
 
 <img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/cbb565c4-6824-433e-8961-df60d5479410" />
+<p align="center">
+  <img src="figures/happiness_distribution.png" width="600"><br>
+  <span style="font-size:12px><em>Figure 2.1: Distributionof happiness_average scores</em><span>
+</p>
 
   The distribution in the histogram is **slightly left-skewed** and most words cluster around 5-6 which means the average happiness is moderately high.  
   
