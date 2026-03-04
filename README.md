@@ -45,7 +45,6 @@ python3 src/run_analysis.py
 
 
     
-    
 ### **_1. Load, clean, and describe the dataset_** ###
 
 **_1.1 Load the file_**
