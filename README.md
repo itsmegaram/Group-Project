@@ -61,7 +61,7 @@ lines).
 
 • _Explain how you loaded the file (1–3 sentences)._
 
-  We loaded the LabMT 1.0 dataset (Data_Set_S1.txt) as a file with a delimited tab, using `pandas.read_csv()`. The file begins with three lines of metadata so in order to skip those rows, we used `skiprows=3`. We converted all the numeric columns into numeric types using `pd.to_numeric()` and replacing `"--"` values with 'NaN' to show the missing ranks.
+  We loaded the LabMT 1.0 dataset (Data_Set_S1.txt) as a file with a delimited tab, using `pandas.read_csv()`. The file begins with three lines of metadata so in order to skip those rows, we used `skiprows=3`. We converted all the numeric columns into numeric types using `pd.to_numeric()` and replacing `"--"` values with `'NaN'` to show the missing ranks.
 
 • _State the shape of the dataset (rows × columns)._  
 
