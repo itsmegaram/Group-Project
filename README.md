@@ -283,16 +283,38 @@ Write an interpretative paragraph addressing things like:
 • What meanings/contexts the words can have
 • Why an happiness score might be high/low
 • What kinds of voices or communities might use it differently
-Your goal is not to be “right,” but to show careful interpretive reasoning.
+Your goal is not to be “right,” but to show careful interpretive reasoning.  
 
-Words can be used in many different contexts, so taking the words from a dataset without the specific context can have major consequences to the interpretation. Looking at some of the happiest words in the dataset, such as “laugh”, “laughing”, and “laughs”, they are variations of the same word. People can use “laugh” as a positive way to show amusement or joy towards something, however it could also be used in a negative way such as mockery or anxiousness. Most people connect these words to positivity and happiness, whether the context entails that or not, which is probably why these words scored so high.
-The same could be said to the very negative words, such as “kill” and “killed” could be used in a literal term to refer to a saddening event, however in slang the words kill and killed are also used in a positive way to refer to exceptional success or performance. Since these words are in the top 10 lowest happiness rank, it could be seen that the dataset only took data that referred to the negative data or it did not take into consideration the different context it might have had. Other words such as “death” and “cancer” are very literal in the negativity it contains and with that logic, it makes sense as to why they score very low. 
-The dataset also showed some of the most contested words such as “cigarettes” and “fuck”, which are words that have multiple different ways they could be interpreted and are connected to the context with it. With “fuck” being a simple curse word people use in both negative and positive ways respectively and “cigarettes” being a word that could be connected to diseases and death, but also people talking positively about it.
-Lastly, the dataset shows 5 strange words that do not immediately scream happiness, but rather could be used in many different ways by different people. Words such as “pentagon” could be referred to as the political american headquarters which could be used by mostly americans either criticising or complimenting the headquarters or by people joking about the geopolitics within America. Another strange word that jumped out is “sandwich”, which in itself is a food that has no correlation to happiness on its own, however working people might see a sandwich as their one happy food to enjoy while taking a break from their job. 
+**_Interpretation_**  
+
+**Very positive words**
+
+Words can be used in many different contexts, so taking the words from a dataset without the specific context can have major consequences to the interpretation. Looking at some of the happiest words in the dataset, such as `“laugh”`, `“laughing”`, and `“laughs”`, they are variations of the same word. People can use `“laugh”` as a positive way to show amusement or joy towards something, however it could also be used in a negative way such as mockery or anxiousness.  
+
+Most people connect these words to positivity and happiness, whether the context entails that or not, which is probably why these words scored so high.  
+
+**Very negative words**  
+
+The same could be said to the very negative words, such as `“kill”` and `“killed”` could be used in a literal term to refer to a saddening event, however in slang the words kill and killed are also used in a positive way to refer to exceptional success or performance. Since these words are in the top 10 lowest happiness rank, it could be seen that the dataset only took data that referred to the negative data or it did not take into consideration the different context it might have had.  
+
+Other words such as `“death”` and `“cancer”` are very literal in the negativity it contains and with that logic, it makes sense as to why they score very low.  
+
+**Contested words**  
+
+The dataset also showed some of the most contested words such as `“cigarettes”` and `“fuck”`, which are words that have multiple different ways they could be interpreted and are connected to the context with it. With `“fuck”` being a simple curse word people use in both negative and positive ways respectively and `“cigarettes”` being a word that could be connected to diseases and death, but also people talking positively about it.  
+
+**Strange words**  
+
+Lastly, the dataset shows 5 strange words that do not immediately scream happiness, but rather could be used in many different ways by different people. Words such as `“pentagon”` could be referred to as the political american headquarters which could be used by mostly americans either criticising or complimenting the headquarters or by people joking about the geopolitics within America.  
+
+Another strange word that jumped out is `“sandwich”`, which in itself is a food that has no correlation to happiness on its own, however working people might see a sandwich as their one happy food to enjoy while taking a break from their job.  
+
+**Conclusion**  
+
 This dataset shows on the surface that words can show happiness, however the context with these words could change the interpretation of that happiness connected with the said words, or said words being voiced by different people. 
 
 
-## 4.0 Critical reflection: how was this dataset generated, and why does it matter?
+## _4.0 Critical reflection: how was this dataset generated, and why does it matter?_
 ### _4.1 Reconstructing the pipeline_ ###
 How our dataset emerged.
 1. From a LabMT lexicon words were selected.
