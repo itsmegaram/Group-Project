@@ -118,6 +118,9 @@ you—and what “make sense” even means here.
   We identified the 10 most positive and 10 most negative words by sorting happiness_average.
   The most positive words tend to reflect positive emotional or social concepts, while the most negative words are related to harm or suffering. These results "make sense" in relation to the broad cultural understanding of these concepts, rather than the objective truth. 
 
+
+  ---
+
 **_2. Quantitative exploration: distributions and relationships_**
    
 Your goal is to describe what the dataset “looks like” statistically, and to notice patterns that
@@ -197,6 +200,9 @@ another, and interpret why that might be.
 
   Each corpus contains exactly 5000 ranked words by construction.
   A good example is the word “lol”. It is ranked high on Twitter but does not appear in the NYT top-5000. This reflects the informal, conversational style of social media. 
+
+
+---
 
 # Group-Project# 
 ## Dataset: LabMT 1.0 (word happiness lexicon)
