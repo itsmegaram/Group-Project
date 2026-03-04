@@ -121,7 +121,7 @@ you—and what “make sense” even means here.
 
   ---
 
-**_2. Quantitative exploration: distributions and relationships_**
+### **_2. Quantitative exploration: distributions and relationships_** ###
    
 Your goal is to describe what the dataset “looks like” statistically, and to notice patterns that
 invite interpretation.
