@@ -265,16 +265,17 @@ All happiness-related columns and `word` have 0 missing values.
 Sanity check:
 - Duplicate words: **0**
 
-**_3. Qualitative exploration: close reading the lexicon as a cultural artifact._**
+## **_3. Qualitative exploration: close reading the lexicon as a cultural artifact._** ##  
+
 This is where you bring humanities skills directly into a data project.
 
-3.1 Build a small “exhibit” of words
+_3.1 Build a small “exhibit” of words
   Code tasks
 Create a small table (you can print it or save it) of 20 words selected across categories:
 • 5 very positive
 • 5 very negative
 • 5 highly contested (high standard deviation)
-• 5 “weird / surprising / historically dated / culturally loaded” (your choice)
+• 5 “weird / surprising / historically dated / culturally loaded” (your choice)_
 
 A table called "qualitative table" was created using the code given in the project and the 5 strange words were created by using a code made referring to specific lines in the dataset
 
