@@ -193,7 +193,9 @@ Code tasks
 missing)_
 
 <img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/6c9ee89e-12d6-4e5e-b916-6168762f33b2" />
-
+<p align="center">
+    <sub><em>Figure 2.3: Number of LabMT words in each corpus Top-5000</em></sub>
+</p>
 
   All four corpuses have 5,000 LabMT words with ranks, which represents roughly 49% share of the lexicon.
 
@@ -208,6 +210,9 @@ missing)_
 – scatterplot of Twitter rank vs NYT rank for words present in both (optional)
 
 <img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/fd7efa7c-0b7b-42a6-a4a3-716832a3b7e4" />
+<p align="center">
+    <sub><em>Figure 2.4: Scatterplot of Twitter rank vs NYT rank</em></sub>
+</p>
 
 • Interpret what your plot suggests about the four corpora.
 • Give one concrete example of a word that is “common” in one corpus but missing in
