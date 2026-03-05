@@ -407,7 +407,7 @@ To improve this dataset we would include contextual embeddings and leave isolate
     : LabMT 1.0 dataset ("Language Assessment by Mechanical Turk").  
 
 - _Paper_  
-    : Dodds, Peter Sheridan, Kameron Decker Harris, Isabel M. Kloumann, Catherine A. Bliss, and         Chrisopher M. Danforth. 2011. "Temporal Patterns of Happiness and Information in a Global           Social Network: Hedonometrics and Twitter." _PLoS ONE_6 (12): e26752.                               https://doi.org/10.1371/journal.pone.0026752  
+    : Dodds, Peter Sheridan, Kameron Decker Harris, Isabel M. Kloumann, Catherine A. Bliss, and         Christopher M. Danforth. 2011. "Temporal Patterns of Happiness and Information in a Global          Social Network: Hedonometrics and Twitter." _PLoS ONE_6 (12): e26752.                               https://doi.org/10.1371/journal.pone.0026752  
 
 
 
